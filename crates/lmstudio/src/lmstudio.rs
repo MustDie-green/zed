@@ -5,7 +5,7 @@ use serde::{Deserialize, Serialize};
 use serde_json::{value::RawValue, Value};
 use std::{convert::TryFrom, sync::Arc, time::Duration};
 
-pub const LMSTUDIO_API_URL: &str = "http://localhost:1234/api/v0";
+pub const LMSTUDIO_API_URL: &str = "http://localhost:1234/api/v1";
 
 #[derive(Clone, Copy, Serialize, Deserialize, Debug, Eq, PartialEq)]
 #[serde(rename_all = "lowercase")]

@@ -49,7 +49,7 @@ impl EmbeddingProvider for LmStudioEmbeddingProvider {
             async {
                 let response = self
                     .client
-                    .post_json("http://localhost:1234/api/v0/embeddings", request.into())
+                    .post_json("http://localhost:1234/api/v1/embeddings", request.into())
                     .await?;
 
                 let mut body = String::new();
